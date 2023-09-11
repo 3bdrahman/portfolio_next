@@ -9,7 +9,7 @@ import {HiDownload} from 'react-icons/hi';
 import { FaGithubSquare } from 'react-icons/fa';
 export default function Intro() {
     return (
-    <section className='mb-28 max-w-[50rem] text-center sm:mb-0'>
+    <section id='home' className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'>
         <div className='flex items-center justify-center'>
             <div className='relative'>
                 <motion.div
@@ -21,8 +21,8 @@ export default function Intro() {
                 }}>
                 <Image src={profile} 
                 alt='profile picture' 
-                width="200" 
-                height="200" 
+                width="192" 
+                height="192" 
                 quality="95" 
                 priority={true}
                 className=' h-[6.7rem] w-[6.7rem] rounded-full border-[0.25rem] border-white object-cover shadow-xl select-none'/>
@@ -38,14 +38,14 @@ export default function Intro() {
                 </motion.span>
             </div>
         </div>
-        <motion.p className='mb-10 mt-4 px-4 text-1xl font-medium !leading-[1.5] sm:text-2xl' 
+        <motion.h1 className='mb-10 mt-4 px-4 text-1xl font-medium !leading-[1.5] sm:text-2xl' 
         initial = {{opacity:0, y:100}}
         animate={{opacity:1, y:0}}>
         <span className="font-bold">Hello, I'm Youssef.</span> I'm a{" "}
         <span className="font-bold">Computer Science </span>student with{" "}
         <span className="font-bold">3 years</span> of experience developing Web Applications. My current role is a <span className="italic"> <span className='font-bold'>MERN Developer</span> at the  <span className='font-bold'>University of Rochester</span></span>. My focus is{" "}
         <span className="underline">React & Front-end Development</span>.
-        </motion.p>
+        </motion.h1>
         <motion.div className='flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium'
         initial={{opacity:0, y:100}}
         animate={{opacity:1, y:0}}
