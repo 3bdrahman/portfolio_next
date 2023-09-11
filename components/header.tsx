@@ -5,10 +5,10 @@ import {motion} from 'framer-motion';
 import { links } from '@/lib/data';
 import Link from 'next/link';
 import clsx from 'clsx';
-import ActiveSectionContextProvider, { ActiveSectionContext, useActiveSectionContext } from '@/context/active-section-context';
+import {useActiveSectionContext } from '@/context/active-section-context';
 
 export default function Header() {
-    const {activeSection, setActiveSection} = useActiveSectionContext();
+    const {activeSection, setActiveSection, setTimeLastClick} = useActiveSectionContext();
   return (
     <header className='z-[999] relative'>
         <motion.div className='fixed top-0 left-1/2 h-[3.5rem] w-full rounded-none border border-white border-opacity-40 
@@ -22,7 +22,10 @@ export default function Header() {
                     <motion.li className='h-3/4 flex items-center justify-center relative' key={link.hash} initial={{y: -100, opacity:0}} animate={{y:0, opacity:1}}>
                         <Link className={clsx('flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition', {
                             'text-gray-950': activeSection === link.name
-                        })} href={link.hash} onClick={()=>setActiveSection(link.name)}>{link.name} 
+                        })} href={link.hash} onClick={()=>{
+                            setActiveSection(link.name);
+                            setTimeLastClick(Date.now())
+                            }}>{link.name} 
                         {link.name === activeSection && (<motion.span className='bg-gray-100 rounded-full absolute inset-0 -z-10'
                         layoutId='activeSection' transition={{
                             type: "spring",
