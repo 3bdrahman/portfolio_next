@@ -4,6 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import amazonUI from "@/public/amazon_clone.png";
 import selfDriving from "@/public/Self_driving_2D.png";
+import avatar from "@/public/avatar.png"
 
 export const links = [
   {
@@ -34,26 +35,26 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Computer Science Student",
+    location: "University of Rochester",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Relevant courses: Data Structures & Algorithms,  Design & Analysis of Efficient Algorithms, Web Programming, Mobile App Development, Database Systems, Artificial Intelligence.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2019 - 2023",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Workshop Leader",
+    location: "University of Rochester",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Guided weekly academic sessions, emphasizing core concepts and interactive discussions, while offering personalized mentoring in Data Structures and Algorithms Java",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2021 - 2022",
   },
   {
     title: "Full-Stack Developer",
-    location: "Houston, TX",
+    location: "Remote (Rochester, NY)",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Enhanced application performance and user interface, collaborated to develop a sophisticated online reservation system, upgraded search functionalities, and spearheaded a team in optimizing the MERN-stack LASSO application, ensuring streamlined documentation and effective team onboarding.",
     icon: React.createElement(FaReact),
     date: "2021 - present",
   },
@@ -61,46 +62,43 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "GPT-Sync Avatar",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: amazonUI,
+      "React application that imitates a virtual chat with a 3D Ready Player Me avatar (RPM) with help of OpenAI ChatGPT & Whisper APIs and Microsoft-speech-SDK",
+    tags: ["React","Express.js", "Socket.io", "Three.js",  "ChatGPT API"],
+    imageUrl: avatar,
   },
   {
-    title: "rmtDev",
+    title: "Self-driving Car",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "Simulates a self-driving car experience in a 2D environment, leveraging neural networks for the vehicle's autonomous behavior. ",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: amazonUI,
+    imageUrl: selfDriving,
   },
   {
-    title: "Word Analytics",
+    title: "Amazon UI Clone",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "An Amazon clone that uses React hooks, Firebase Authentication, Firestore, Stripe API.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: selfDriving,
+    imageUrl: amazonUI,
   },
 ] as const;
 
 export const skillsData = [
+  "Java",
+  "JavaScript",
+  "React",
   "HTML",
   "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
+  "Tailwind",
+  "Python",
   "Next.js",
+  "TypeScript",
   "Node.js",
   "Git",
-  "Tailwind",
-  "Prisma",
   "MongoDB",
   "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
   "Framer Motion",
+  "RESTful APIs"
 ] as const;

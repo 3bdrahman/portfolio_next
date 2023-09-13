@@ -10,18 +10,13 @@ export default function About() {
     initial={{opacity:0, y:100}} animate={{opacity:1, y:0}} transition={{delay:1.75}}>
         <SectionHeading>About me</SectionHeading>
         <p className='mb-3'>
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
+        Graduating from the University of Rochester with a degree in
+        <span className="font-medium">Computer Science</span>,  
+        I worked as a Full-Stack Lead Developer and delved deeper into the world {" "}
+        <span className="font-medium">web development</span>.{" "}
+        <span className="italic">What I cherish most about programming is the thrill of problem-solving, 
+        that eureka moment when a solution crystallizes.</span>  My primary expertise lies in  <span className="underline"> React, JavaScript, Java, and Node.js</span>.
+        I am also familiar with TypeScript and Next.js. I am always looking to
         learn new technologies. I am currently looking for a{" "}
         <span className="font-medium">full-time position</span> as a software
         developer.

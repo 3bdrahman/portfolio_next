@@ -64,21 +64,21 @@ export default function Intro() {
             }}>Contact me <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition'/></Link>
             <a 
                 className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none 
-                focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10'
+                focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10 dark:bg-white/10 dark:hover:text-white'
                 href='/resume.pdf' download
                 >Download Resume <HiDownload className='opacity-60 group-hover:translate-y-1 transition'/></a>
             <div className='flex gap-2'>
             <a className='bg-white p-4 flex items-center gap-2 rounded-full 
             text-gray-700 outline-none focus:scale-[1.15] hover:scale-110 
             active:scale-[1.15] transition cursor-pointer border border-black/10 
-            hover:text-gray-950' href='https://www.linkedin.com/in/ayosef/' target='_blank'>
+            hover:text-gray-950 dark:bg-white/10 dark:text-white/80 dark:hover:text-white' href='https://www.linkedin.com/in/ayosef/' target='_blank'>
                 <BsLinkedin />  
             </a>
             
             <a className='bg-white p-4 flex items-center gap-2 rounded-full 
             text-gray-700 text-[1.35rem] outline-none focus:scale-[1.15] 
             hover:scale-[1.15] active:scale-105 transition cursor-pointer border 
-            border-black/10 hover:text-gray-950' href='https://github.com/3bdrahman' target='_blank'>
+            border-black/10 hover:text-gray-950 dark:bg-white/10 dark:text-white/80 dark:hover:text-white' href='https://github.com/3bdrahman' target='_blank'>
                 <FaGithubSquare />  
             </a>
             </div>
