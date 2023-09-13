@@ -35,12 +35,20 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Computer Science Student",
+    title: "BSc Computer Science ",
     location: "University of Rochester",
     description:
       "Relevant courses: Data Structures & Algorithms,  Design & Analysis of Efficient Algorithms, Web Programming, Mobile App Development, Database Systems, Artificial Intelligence.",
     icon: React.createElement(LuGraduationCap),
     date: "2019 - 2023",
+  },
+  {
+    title: "Help Desk Assistant",
+    location: "University of Rochester",
+    description:
+      "On-phone, online chat, and walk-in technical support and software troubleshooting for students and the university community members.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2019 -  2023",
   },
   {
     title: "Workshop Leader",
@@ -54,9 +62,9 @@ export const experiencesData = [
     title: "Full-Stack Developer",
     location: "Remote (Rochester, NY)",
     description:
-      "Enhanced application performance and user interface, collaborated to develop a sophisticated online reservation system, upgraded search functionalities, and spearheaded a team in optimizing the MERN-stack LASSO application, ensuring streamlined documentation and effective team onboarding.",
+      "Enhanced application performance and user interface, collaborated to develop a sophisticated online reservation system, upgraded search functionalities, and spearheaded a team in optimizing the MERN-stack LASSO application, ensuring adherence to scrum agile methodology. ",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "August 2022 - Present",
   },
 ] as const;
 
@@ -67,20 +75,23 @@ export const projectsData = [
       "React application that imitates a virtual chat with a 3D Ready Player Me avatar (RPM) with help of OpenAI ChatGPT & Whisper APIs and Microsoft-speech-SDK",
     tags: ["React","Express.js", "Socket.io", "Three.js",  "ChatGPT API"],
     imageUrl: avatar,
+    github:"https://github.com/3bdrahman/GPT-Sync-Avatar",
   },
   {
     title: "Self-driving Car",
     description:
       "Simulates a self-driving car experience in a 2D environment, leveraging neural networks for the vehicle's autonomous behavior. ",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    tags: ["HTML", "CSS", "JavaScript", "Neural Network"],
     imageUrl: selfDriving,
+    github: "https://github.com/3bdrahman/Self-driving-car",
   },
   {
-    title: "Amazon UI Clone",
+    title: "Amazon Clone",
     description:
       "An Amazon clone that uses React hooks, Firebase Authentication, Firestore, Stripe API.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    tags: ["React", "Firebase Auth", "Stripe API", "Tailwind", "Firestore"],
     imageUrl: amazonUI,
+    github:"https://github.com/3bdrahman/Clozon"
   },
 ] as const;
 

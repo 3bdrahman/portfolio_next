@@ -1,18 +1,24 @@
 "use client";
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import profile from '@/public/profile.jpg'
 import {motion} from 'framer-motion';
 import Link from 'next/link';
 import {BsArrowRight, BsLinkedin} from "react-icons/bs";
-import {HiDownload} from 'react-icons/hi';
-import { FaGithubSquare } from 'react-icons/fa';
+import {HiDownload, HiEye} from 'react-icons/hi';
+import { FaArrowLeft, FaCross, FaGithubSquare, FaTimes } from 'react-icons/fa';
 import { useSectionInView } from '@/lib/hooks';
 import { useActiveSectionContext } from '@/context/active-section-context';
-
+import Modal from 'react-modal'
+import { useTheme } from '@/context/theme-context';
 export default function Intro() {
     const {ref} = useSectionInView("Home", 0.5);
     const {setTimeLastClick, setActiveSection} = useActiveSectionContext();
+    const [modalOpen, setModalOpen] = useState(false)
+    const {theme}= useTheme()
+    const toggleModal = () =>{
+        setModalOpen(!modalOpen);
+    }
     return (
     <section ref={ref} id='home' className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'>
         <div className='flex items-center justify-center'>
@@ -49,7 +55,7 @@ export default function Intro() {
         <span className="font-bold">Hello, I'm Youssef.</span> I'm a{" "}
         <span className="font-bold">Computer Science </span>student with{" "}
         <span className="font-bold">3 years</span> of experience developing Web Applications. My current role is a <span className="italic"> <span className='font-bold'>MERN Developer</span> at the  <span className='font-bold'>University of Rochester</span></span>. My focus is{" "}
-        <span className="underline">React & Front-end Development</span>.
+        <span className="underline">React & Front-end Development</span>. I'm actively looking for an entry-level, full-time developer position.
         </motion.h1>
         <motion.div className='flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium'
         initial={{opacity:0, y:100}}
@@ -65,8 +71,38 @@ export default function Intro() {
             <a 
                 className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none 
                 focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10 dark:bg-white/10 dark:hover:text-white'
-                href='/resume.pdf' download
-                >Download Resume <HiDownload className='opacity-60 group-hover:translate-y-1 transition'/></a>
+                onClick={toggleModal}
+                >View Resume <HiEye className='opacity-60 group-hover:translate-y-1 transition'/></a>
+                <Modal   isOpen={modalOpen} onRequestClose={toggleModal} 
+                style={{
+                    
+                    overlay: {
+                        position:'fixed',
+                        top:0,
+                        left:0,
+                        right:0,
+                        bottom:0,
+                        backgroundColor: 'rgba(0, 0, 0, 0.75)',
+                        zIndex:999
+                    },
+                    content: {
+                        accentColor:"azure",
+                        overflow:'hidden',
+                        top: '5%',
+                        left: '5%',
+                        right: '5%',
+                        bottom: '5%',
+                        padding:0,
+                        backgroundColor: theme === 'light'? 'rgba(0, 0, 0, 0.75)' : 'lightgray'
+                    },
+                    
+                }}>
+                    <div className='h-[100%] relative'>
+                    <iframe src='/resume.pdf' width="100%" height="100%"></iframe>
+                    <button className='absolute bottom-3 right-5 p-2  rounded-full hover:scale-105 text-gray-100  bg-gray-950 dark:text-gray-100 hover:bg-gray-100 hover:text-gray-950 transition-all ' onClick={toggleModal}><FaTimes/></button>
+                    </div>
+                    
+                </Modal>
             <div className='flex gap-2'>
             <a className='bg-white p-4 flex items-center gap-2 rounded-full 
             text-gray-700 outline-none focus:scale-[1.15] hover:scale-110 
