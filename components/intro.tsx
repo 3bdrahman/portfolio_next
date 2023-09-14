@@ -98,7 +98,7 @@ export default function Intro() {
                 }}>
                     <div className='h-full relative p-0'>
                     <iframe className='w-full h-full' src='/resume.pdf' width="100%" height="100%"></iframe>
-                    <button className='absolute bottom-3 right-5 p-2  rounded-full hover:scale-105 text-gray-100 bg-gray-950 dark:text-gray-100 hover:bg-gray-100 hover:text-gray-950 transition-all ' onClick={toggleModal}><FaTimes/></button>
+                    <button className='absolute bottom-3 right-5 p-2  rounded-full hover:scale-105 text-gray-100 bg-gray-950 dark:text-gray-100 hover:bg-gray-100 hover:text-gray-950 dark:hover:text-gray-950 transition-all ' onClick={toggleModal}><FaTimes/></button>
                     </div>
                     
                 </Modal>
