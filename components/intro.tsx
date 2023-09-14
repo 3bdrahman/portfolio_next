@@ -36,9 +36,9 @@ export default function Intro() {
                 height="192" 
                 quality="95" 
                 priority={true}
-                className=' h-[6.7rem] w-[6.7rem] rounded-full border-[0.25rem] border-white object-cover shadow-xl select-none'/>
+                className=' h-[13.7rem] w-[13.7rem] rounded-full border-[0.25rem] border-white object-cover shadow-xl select-none'/>
                 </motion.div>
-                <motion.span className='text-3xl select-none absolute bottom-0 right-0' initial={{opacity:0, scale:0}} animate={{opacity:1, scale:1}} transition={{
+                <motion.span className='text-4xl select-none absolute bottom-5 right-5' initial={{opacity:0, scale:0}} animate={{opacity:1, scale:1}} transition={{
                     type:"spring",
                     stiffness:125,
                     delay: 0.1,
@@ -49,7 +49,7 @@ export default function Intro() {
                 </motion.span>
             </div>
         </div>
-        <motion.h1 className='mb-10 mt-4 px-4 text-1xl font-medium !leading-[1.5] sm:text-2xl' 
+        <motion.h1 className='mb-10 mt-10 px-4 text-1xl font-medium !leading-[1.5] sm:text-2xl' 
         initial = {{opacity:0, y:100}}
         animate={{opacity:1, y:0}}>
         <span className="font-bold">Hello, I'm Youssef.</span> I'm a{" "}
