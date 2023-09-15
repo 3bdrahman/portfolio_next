@@ -10,17 +10,22 @@ export default function About() {
     initial={{opacity:0, y:100}} animate={{opacity:1, y:0}} transition={{delay:1.75}}>
         <SectionHeading>About me</SectionHeading>
         <p className='mb-3'>
-        Graduating from the University of Rochester with a degree in
-        <span className="font-medium">Computer Science</span>,  
-        I worked as a Full-Stack Lead Developer and delved deeper into the world {" "}
-        <span className="font-medium">web development</span>.{" "}
-        <span className="italic">What I cherish most about programming is the thrill of problem-solving, 
-        that eureka moment when a solution crystallizes.</span>  My primary expertise lies in  <span className="underline"> React, JavaScript, Java, and Node.js</span>.
-        I am also familiar with TypeScript and Next.js. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+            I'm currently in my final semester at the 
+            <span className="font-medium"> University of Rochester</span>, where I'm pursuing a degree in 
+            <span className="font-medium"> Computer Science</span>. While my academic journey has been enriching, my part-time role as a Full-Stack Lead Developer  has truly deepened my passion for 
+            <span className="font-medium"> web development</span>. 
+            <span className="italic">There's something genuinely thrilling about finding solutions to intricate coding challenges.</span>
         </p>
+
+        <p className='mb-3'>
+            My core expertise revolves around 
+           {" "}<span className="underline">React, JavaScript, Java, and Node.js</span>, but I've also explored TypeScript and Next.js. The tech landscape is always evolving, and I'm committed to ongoing learning. As I approach graduation, I'm actively seeking a 
+            <span className="font-medium">{" "}full-time position</span> as a software developer. If you believe I'd be a fit for your team, I'd love to <span className='font-medium'>connect</span> .
+        </p>
+
+
+
+
     </motion.section>
   )
 }
