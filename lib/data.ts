@@ -2,7 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import amazonUI from "@/public/amazon_clone.png";
+import clay from "@/public/clay.png";
 import selfDriving from "@/public/Self_driving_2D.png";
 import avatar from "@/public/avatar.png"
 
@@ -24,7 +24,7 @@ export const links = [
     hash: "#skills",
   },
   {
-    name: "Experience",
+    name: "Timeline",
     hash: "#experience",
   },
   {
@@ -35,44 +35,60 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "BSc Computer Science ",
-    location: "University of Rochester",
+    title: "MS AI in Business (GPA:3.6)",
+    location: "Simon Business School",
     description:
-      "Relevant courses: Data Structures & Algorithms,  Design & Analysis of Efficient Algorithms, Web Programming, Mobile App Development, Database Systems, Artificial Intelligence.",
+      "AI & Business, Analytics Design, Regression Analysis, Microeconomics & Marketing Strategy, Professional Communication, Operations Management. ",
     icon: React.createElement(LuGraduationCap),
-    date: "2019 - 2023",
+    date: "2024 - 2025",
   },
   {
-    title: "Help Desk Assistant",
-    location: "University of Rochester",
-    description:
-      "On-phone, online chat, and walk-in technical support and software troubleshooting for students and the university community members.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 -  2023",
-  },
-  {
-    title: "Workshop Leader",
-    location: "University of Rochester",
+    title: "AI Code Trainer",
+    location: "Outlier",
     description:
       "Guided weekly academic sessions, emphasizing core concepts and interactive discussions, while offering personalized mentoring in Data Structures and Algorithms Java",
     icon: React.createElement(CgWorkAlt),
-    date: "2021 - 2022",
+    date: "2024",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Remote (Rochester, NY)",
+    title: "Lead Full-Stack Developer",
+    location: "Universtiy IT",
     description:
-      "Enhanced application performance and user interface, collaborated to develop a sophisticated online reservation system, upgraded search functionalities, and spearheaded a team in optimizing the MERN-stack LASSO application, ensuring adherence to scrum agile methodology. ",
+      "Led a team of six developers, providing mentorship through regular code reviews and establishing standardized project documentation, maximizing rollout efficiency.",
     icon: React.createElement(FaReact),
-    date: "August 2022 - Present",
+    date: "2021 - 2023",
   },
+  {
+    title: "Help Desk Assistant",
+    location: "University IT",
+    description:
+      "On-phone, online chat, and walk-in technical support and software troubleshooting for students and staff.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2019 -  2022",
+  },
+  {
+    title: "BSc Computer Science | Business Minor",
+    location: "University of Rochester",
+    description:
+      "Design & Analysis of Efficient Algorithms, Programming Language Design & Implementation, AI, Web Programming, Data Structures & Algorithms,  Mobile App Development, Database Systems, Computer Organization.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2019 - 2023",
+  }
 ] as const;
 
 export const projectsData = [
   {
-    title: "GPT-Sync Avatar",
+    title: "Clay",
     description:
-      "React application that imitates a virtual chat with a 3D Ready Player Me avatar (RPM) with help of OpenAI ChatGPT & Whisper APIs and Microsoft-speech-SDK",
+      "AI assistant with RAG, Python analysis, and web search capabilities.",
+    tags: ["Python", "Streamlit", "Langchain", "langgraph", "Ollama"],
+    imageUrl: clay,
+    github:"https://github.com/3bdrahman/Clay"
+  },
+  {
+    title: "AvatarGPT",
+    description:
+      "Conversational 3D avatar powered by ChatGPT and Whisper APIs alongside Microsoft-speech-SDK.",
     tags: ["React","Express.js", "Socket.io", "Three.js",  "ChatGPT API"],
     imageUrl: avatar,
     github:"https://github.com/3bdrahman/GPT-Sync-Avatar",
@@ -80,36 +96,29 @@ export const projectsData = [
   {
     title: "Self-driving Car",
     description:
-      "Simulates a self-driving car experience in a 2D environment, leveraging neural networks for the vehicle's autonomous behavior. ",
+      "Simulates self-driving  in a 2D environment, leveraging Feed-forward neural networks for the vehicle's autonomous behavior. ",
     tags: ["HTML", "CSS", "JavaScript", "Neural Network"],
     imageUrl: selfDriving,
     github: "https://github.com/3bdrahman/Self-driving-car",
   },
-  {
-    title: "Amazon Clone",
-    description:
-      "An Amazon clone that uses React hooks, Firebase Authentication, Firestore, Stripe API.",
-    tags: ["React", "Firebase Auth", "Stripe API", "Tailwind", "Firestore"],
-    imageUrl: amazonUI,
-    github:"https://github.com/3bdrahman/Clozon"
-  },
 ] as const;
 
 export const skillsData = [
+  "Python",
+  "NumPy",
+  "Pandas",
+  "Matplotlib",
+  "Seaborn",
+  "Sklearn",
+  "Streamlit",
+  "Tableau",
   "Java",
   "JavaScript",
   "React",
   "HTML",
   "CSS",
   "Tailwind",
-  "Python",
-  "Next.js",
-  "TypeScript",
   "Node.js",
-  "Git",
-  "MongoDB",
-  "Redux",
-  "Express",
-  "Framer Motion",
+  "Version Control",
   "RESTful APIs"
 ] as const;

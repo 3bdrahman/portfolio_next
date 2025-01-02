@@ -52,10 +52,10 @@ export default function Intro() {
         <motion.h1 className='mb-10 mt-10 px-4 text-1xl font-medium !leading-[1.5] sm:text-2xl' 
         initial = {{opacity:0, y:100}}
         animate={{opacity:1, y:0}}>
-        <span className="font-bold">Hello, I'm Youssef.</span> I'm a{" "}
-        <span className="font-bold">Computer Science </span>student with{" "}
-        <span className="font-bold">3 years</span> of experience developing Web Applications. My current role is a <span className="italic"> <span className='font-bold'>MERN Developer</span> at the  <span className='font-bold'>University of Rochester</span></span>. My focus is{" "}
-        <span className="underline">React & Front-end Development</span>. I'm actively looking for an entry-level, full-time developer position.
+        <span className="font-bold">Hi, I'm Youssef!</span>{" "}
+        <span className="font-bold">AI in Business </span>M.S. student with{" "}
+        <span className="font-bold">3 years</span> of experience developing Web Applications. My most recent role is an <span className="italic"> <span className='font-bold'>AI Code Expert</span> at  <span className='font-bold'>Outlier.ai</span></span>. My focus is{" "}
+        <span className="underline">building creative Gen AI use-cases</span>. I'm actively applying for Applied AI internships.
         </motion.h1>
         <motion.div className='flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium'
         initial={{opacity:0, y:100}}

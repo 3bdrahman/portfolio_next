@@ -10,17 +10,15 @@ export default function About() {
     initial={{opacity:0, y:100}} animate={{opacity:1, y:0}} transition={{delay:1.5}}>
         <SectionHeading>About me</SectionHeading>
         <p className='mb-3'>
-            I'm currently in my final semester at the 
-            <span className="font-medium"> University of Rochester</span>, where I'm pursuing a degree in 
-            <span className="font-medium"> Computer Science</span>. While my academic journey has been enriching, my part-time role as a Full-Stack Lead Developer  has truly deepened my passion for 
-            <span className="font-medium"> web development</span>. 
-            <span className="italic">There's something genuinely thrilling about finding solutions to intricate coding challenges.</span>
+            Graduated with B.Sc in
+            <span className="font-medium"> Computer Science</span>, Dec 23'. Current AI in Business MS Candidate at <span className="font-medium">Simon Business School</span>, Dec 25'.  
+            Seeking an internship as an Applied AI Intern.
         </p>
 
         <p className='mb-3'>
-            My core expertise revolves around 
-           {" "}<span className="underline">React, JavaScript, Java, and Node.js</span>, but I've also explored TypeScript and Next.js. The tech landscape is always evolving, and I'm committed to ongoing learning. As I approach graduation, I'm actively seeking a 
-            <span className="font-medium">{" "}full-time position</span> as a software developer. If you believe I'd be a fit for your team, I'd love to <span className='font-medium'>connect</span> .
+            My skills include but not limited to 
+           {" "}<span className="underline">Python, Java, JavaScript, and Node.js</span>. The tech landscape is constantly evolving, and I'm committed to ongoing learning. I'm actively seeking an 
+            <span className="font-medium">{" "}internship</span> in AI and Analytics. If you believe I'd be a fit for your team, I'd love to <span className='font-medium'>connect</span>.
         </p>
 
 
