@@ -83,7 +83,7 @@ export const projectsData = [
       "AI Chess Battle where language models are benchmarked against each other in strategic gameplay!",
     tags: ["Python", "OpenAI API", "Anthropic API", "Ollama"],
     imageUrl: selfDriving,
-    github: "https://github.com/3bdrahman/Self-driving-car",
+    github: "https://github.com/3bdrahman/chess",
   },
   {
     title: "Clay",
