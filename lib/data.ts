@@ -38,7 +38,7 @@ export const experiencesData = [
     title: "MS AI in Business (GPA:3.6)",
     location: "Simon Business School",
     description:
-      "AI & Business, Analytics Design, Regression Analysis, Microeconomics & Marketing Strategy, Professional Communication, Operations Management. ",
+      "AI & Business, AI & Deep Learning, Big Data, Analytics Design, Social Media Analytics, Regression Analysis, Microeconomics & Marketing Strategy. ",
     icon: React.createElement(LuGraduationCap),
     date: "2024 - 2025",
   },
