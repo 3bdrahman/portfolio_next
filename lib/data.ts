@@ -46,9 +46,9 @@ export const experiencesData = [
     title: "AI Code Trainer",
     location: "Outlier",
     description:
-      "Guided weekly academic sessions, emphasizing core concepts and interactive discussions, while offering personalized mentoring in Data Structures and Algorithms Java",
+      "Annotated AI interactions to improve models’ coding and reasoning capabilities.",
     icon: React.createElement(CgWorkAlt),
-    date: "2024",
+    date: "2024 - 2025",
   },
   {
     title: "Lead Full-Stack Developer",
@@ -78,6 +78,14 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "AI Chess Battle",
+    description:
+      "AI Chess Battle where language models are benchmarked against each other in strategic gameplay!",
+    tags: ["Python", "OpenAI API", "Anthropic API", "Ollama"],
+    imageUrl: selfDriving,
+    github: "https://github.com/3bdrahman/Self-driving-car",
+  },
+  {
     title: "Clay",
     description:
       "AI assistant with RAG, Python analysis, and web search capabilities.",
@@ -93,14 +101,7 @@ export const projectsData = [
     imageUrl: avatar,
     github:"https://github.com/3bdrahman/GPT-Sync-Avatar",
   },
-  {
-    title: "Self-driving Car",
-    description:
-      "Simulates self-driving  in a 2D environment, leveraging Feed-forward neural networks for the vehicle's autonomous behavior. ",
-    tags: ["HTML", "CSS", "JavaScript", "Neural Network"],
-    imageUrl: selfDriving,
-    github: "https://github.com/3bdrahman/Self-driving-car",
-  },
+  
 ] as const;
 
 export const skillsData = [
