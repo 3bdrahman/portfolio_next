@@ -3,7 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import clay from "@/public/clay.png";
-import selfDriving from "@/public/Self_driving_2D.png";
+import chess from "@/public/chess.png";
 import avatar from "@/public/avatar.png"
 
 export const links = [
@@ -82,8 +82,8 @@ export const projectsData = [
     description:
       "AI Chess Battle where language models are benchmarked against each other in strategic gameplay!",
     tags: ["Python", "OpenAI API", "Anthropic API", "Ollama"],
-    imageUrl: selfDriving,
-    github: "https://github.com/3bdrahman/chess",
+    imageUrl: chess,
+    github: "https://github.com/3bdrahman/chess_fight",
   },
   {
     title: "Clay",
